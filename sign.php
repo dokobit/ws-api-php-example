@@ -1,7 +1,7 @@
 <?php
     include './lib.php';
     echo "iSign.io API PHP example\n";
-    $url = 'https://api-sandbox.isign.lt';
+    $url = 'https://developers.isign.io';
     $accessToken = ''; //Enter valid developer access token here.
     $file = isset($argv[1])?$argv[1]:'./test.pdf';
     $phone = isset($argv[2])?$argv[2]:'+37060000007';
