@@ -1,4 +1,4 @@
-# iSign.io API PHP Example
+# ISIGIN.io API PHP Example
 
 ## How to start? 
 

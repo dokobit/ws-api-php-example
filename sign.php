@@ -42,7 +42,7 @@
 
     echo "[OK]\n";
     echo "Signing token: [ " . $prepared['token'] . " ]\n";
-    echo "Your phone will receive sign request with\nVerification code: [ " . $prepared['confirmationCode'] . " ]\n";
+    echo "Your phone will receive sign request with\nVerification code: [ " . $prepared['control_code'] . " ]\n";
 
     echo "Requesting sign status:\n";
 
