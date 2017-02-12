@@ -2,7 +2,7 @@
 
 ## How to start? 
 
-Request access token at https://www.isign.io/contacts#request-access
+Request access token at https://www.isign.io/services/contacts#request-access
 
 Enter API access token to sign.php:5 line.
 
