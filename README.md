@@ -1,13 +1,19 @@
-# ISIGIN.io API PHP Example
+# ISIGN.io API PHP Examples
 
 ## How to start? 
 
 Request access token at https://www.isign.io/services/contacts#request-access
 
-Enter API access token to sign.php:5 line.
+Enter API access token to example in 5th line.
 
+### Mobile-ID signing example
 Enter your phone number and personal code (or use testing ones) at 7-8 lines or use as console command:
 
-`php sign.php ./test.pdf {phone} {personalCode}`
+`php mobile_sign.php ./test.pdf {phone} {personalCode}`
 
-Run!
+### Smart-ID signing example 
+
+Enter your country and personal code at 6-7 lines or use as console command:
+
+`php smart-id_sign.php {country} {personalCode}`
+
