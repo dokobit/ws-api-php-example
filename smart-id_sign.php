@@ -46,7 +46,7 @@
     $time = 120;
     while ($time > 0) {
         $statusResponse = request($url, $accessToken, 'smartid/sign/status/' . $prepared['token'], [], false);
-        echo "Status: ["$statusResponse['status']."]\n";
+        echo "Status: [".$statusResponse['status']."]\n";
         if ($statusResponse['status'] == 'ok') {
             file_put_contents(
                 __DIR__ . '/test_signed.pdf', 

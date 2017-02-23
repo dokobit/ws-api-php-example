@@ -17,3 +17,9 @@ Enter your country and personal code at 6-7 lines or use as console command:
 
 `php smart-id_sign.php {country} {personalCode}`
 
+### Smart-ID identification example 
+
+Enter your country and personal code at 6-7 lines or use as console command:
+
+`php smart-id_login.php {country} {personalCode}`
+
