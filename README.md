@@ -2,7 +2,9 @@
 
 ## How to start? 
 
-Request access token at https://www.isign.io/services/contacts#request-access
+Check more documentation at https://developers.isign.io
+
+Request access token at [here](https://www.isign.io/services/token-request).
 
 Enter API access token to example in 5th line.
 
