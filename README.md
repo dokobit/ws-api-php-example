@@ -1,10 +1,10 @@
-# ISIGN.io API PHP Examples
+# Dokobit WS API PHP Examples
 
 ## How to start? 
 
-Check more documentation at https://developers.isign.io
+Check more documentation at https://developers.dokobit.com
 
-Request access token at [here](https://www.isign.io/services/token-request).
+Request access token at [here](https://www.dokobit.com/developers/request-token).
 
 Enter API access token to example in 5th line.
 

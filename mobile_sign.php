@@ -1,7 +1,7 @@
 <?php
     include './lib.php';
-    echo "Developers.ISIGN.io API PHP example\n";
-    $url = 'https://developers.isign.io';
+    echo "developers.dokobit.com WS API PHP example\n";
+    $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
     $file = isset($argv[1])?$argv[1]:'./test.pdf';
     $phone = isset($argv[2])?$argv[2]:'+37060000007';

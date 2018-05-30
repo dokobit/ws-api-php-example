@@ -1,7 +1,7 @@
 <?php
     include './lib.php';
-    echo "Developers.ISIGN.io API Smart-ID PHP example\n";
-    $url = 'https://developers.isign.io';
+    echo "developers.dokobit.com WS API Smart-ID PHP example\n";
+    $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
     $country = isset($argv[1])?$argv[1]:'ee';
     $code = isset($argv[2])?$argv[2]:'51001091072';
