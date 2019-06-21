@@ -14,7 +14,7 @@
     echo "Requesting login:\n";
     $prepared = request($url, $accessToken, 'smartid/login', [
         'code' => $code,
-        'country_code' => $country
+        'country' => $country
     ]);
     echo "Responded: [".$prepared['status']."]\n";
 
