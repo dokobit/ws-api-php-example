@@ -4,8 +4,11 @@
     $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
     $file = isset($argv[1])?$argv[1]:'./test.pdf';
-    $phone = isset($argv[2])?$argv[2]:'+37060000007';
-    $code = isset($argv[3])?$argv[3]:'51001091072';
+    /**
+    * Mobile ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
+    */
+    $phone = isset($argv[2])?$argv[2]:'+37060000666';
+    $code = isset($argv[3])?$argv[3]:'50001018865';
 
     if (empty($accessToken)) {
         echo "Access Token is required. Enter at line 5.\n";
