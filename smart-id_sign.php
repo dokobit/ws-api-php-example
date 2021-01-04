@@ -27,7 +27,7 @@
                 [
                     'name' => substr($file, strrpos($file, "/")+1),
                     'content' => base64_encode(file_get_contents($file)),
-                    'digest' => sha256_file($file)
+                    'digest' => hash_file('sha256', $file)
                 ]
             ],
             'reason' => 'Agreement',
