@@ -4,11 +4,11 @@
 
 Check more documentation at https://developers.dokobit.com
 
-Request access token at [here](https://www.dokobit.com/developers/request-token).
+Request access token [here](https://www.dokobit.com/developers/request-token).
 
 Enter API access token to example in 5th line.
 
-Check Mobile ID and Smart-ID test data at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
+Check Mobile ID and Smart-ID test data [here](https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data)
 
 ### Mobile-ID signing example
 
