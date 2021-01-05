@@ -18,7 +18,7 @@ Enter phone number and personal code (from test data) at 7-8 lines or use as con
 
 ### Smart-ID signing example 
 
-Enter country and personal code (from test data or of you Smart-ID DEMO App) at 6-7 lines or use as console command:
+Enter country and personal code (from test data or of your Smart-ID DEMO App) at 6-7 lines or use as console command:
 
 `php smart-id_sign.php {country} {personalCode}`
 
