@@ -16,6 +16,12 @@ Enter phone number and personal code (from test data) at 7-8 lines or use as con
 
 `php mobile_sign.php ./test.pdf {phone} {personalCode}`
 
+### Mobile-ID identification example
+
+Enter phone number and personal code (from test data) at 6-7 lines or use as console command:
+
+`php mobile_login.php {phone} {personalCode}`
+
 ### Smart-ID signing example 
 
 Enter country and personal code (from test data or of your Smart-ID DEMO App) at 6-7 lines or use as console command:
