@@ -1,13 +1,10 @@
 <?php
     include './lib.php';
-    echo "developers.dokobit.com WS API Smart-ID login PHP example\n";
+    echo "developers.dokobit.com WS API Mobile ID login PHP example\n";
     $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
-    $country = isset($argv[1])?$argv[1]:'lt';
-    $code = isset($argv[2])?$argv[2]:'10101010005';
-    /**
-    * Smart-ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
-    */
+    $phone = isset($argv[1])?$argv[1]:'+37060000666';
+    $code = isset($argv[1])?$argv[1]:'50001018865';
 
     if (empty($accessToken)) {
         echo "Access Token is required. Enter at line 5.\n";
@@ -15,9 +12,9 @@
     }
 
     echo "Requesting login:\n";
-    $prepared = request($url, $accessToken, 'smartid/login', [
+    $prepared = request($url, $accessToken, 'v2/mobile/login', [
         'code' => $code,
-        'country' => $country
+        'phone' => $phone
     ]);
     echo "Responded: [".$prepared['status']."]\n";
 
@@ -26,12 +23,12 @@
         exit;
     }
     echo "Token: [ " . $prepared['token'] . " ]\n";
-    echo "Your phone will receive Smart-ID authentication request with\nVerification code: [ " . $prepared['control_code'] . " ]\n";
+    echo "Your phone will receive Mobile ID authentication request with\nVerification code: [ " . $prepared['control_code'] . " ]\n";
 
     echo "Requesting status:\n";
     $time = 120;
     while ($time > 0) {
-        $statusResponse = request($url, $accessToken, 'smartid/login/status/' . $prepared['token'], [], false);
+        $statusResponse = request($url, $accessToken, 'v2/mobile/login/status/' . $prepared['token'], [], false);
         echo "Status: [".$statusResponse['status']."]\n";
         if ($statusResponse['status'] == 'ok') {
             print_r($statusResponse);

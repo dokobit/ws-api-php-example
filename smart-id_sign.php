@@ -1,10 +1,13 @@
 <?php
     include './lib.php';
-    echo "developers.dokobit.com WS API Smart-ID PHP example\n";
+    echo "developers.dokobit.com WS API Smart-ID signing PHP example\n";
     $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
-    $country = isset($argv[1])?$argv[1]:'ee';
-    $code = isset($argv[2])?$argv[2]:'51001091072';
+    $country = isset($argv[1])?$argv[1]:'lt';
+    $code = isset($argv[2])?$argv[2]:'10101010005';
+    /**
+    * Smart-ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
+    */
     $file = isset($argv[3])?$argv[3]:'./test.pdf';
 
     if (empty($accessToken)) {
@@ -24,7 +27,7 @@
                 [
                     'name' => substr($file, strrpos($file, "/")+1),
                     'content' => base64_encode(file_get_contents($file)),
-                    'digest' => sha1_file($file)
+                    'digest' => hash_file('sha256', $file)
                 ]
             ],
             'reason' => 'Agreement',

@@ -1,11 +1,14 @@
 <?php
     include './lib.php';
-    echo "developers.dokobit.com WS API PHP example\n";
+    echo "developers.dokobit.com WS API Mobile ID signing PHP example\n";
     $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
     $file = isset($argv[1])?$argv[1]:'./test.pdf';
-    $phone = isset($argv[2])?$argv[2]:'+37060000007';
-    $code = isset($argv[3])?$argv[3]:'51001091072';
+    $phone = isset($argv[2])?$argv[2]:'+37060000666';
+    $code = isset($argv[3])?$argv[3]:'50001018865';
+    /**
+    * Mobile ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
+    */
 
     if (empty($accessToken)) {
         echo "Access Token is required. Enter at line 5.\n";
@@ -25,7 +28,7 @@
                 [
                     'name' => substr($file, strrpos($file, "/")+1),
                     'content' => base64_encode(file_get_contents($file)),
-                    'digest' => sha1_file($file)
+                    'digest' => hash_file('sha256', $file)
                 ]
             ],
             'reason' => 'Agreement',
