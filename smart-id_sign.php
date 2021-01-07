@@ -1,6 +1,6 @@
 <?php
     include './lib.php';
-    echo "developers.dokobit.com WS API Smart-ID signing PHP example\n";
+    echo "Developers.dokobit.com WS API Smart-ID signing PHP example\n";
     $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
     $country = isset($argv[1])?$argv[1]:'lt';
