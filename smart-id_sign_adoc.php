@@ -2,7 +2,7 @@
     include './lib.php';
     echo "Developers.dokobit.com WS API Smart-ID signing PHP example\n";
     $url = 'https://developers.dokobit.com';
-    $accessToken = 'test_labadiena'; //Enter valid developer access token here.
+    $accessToken = ''; //Enter valid developer access token here.
     $country = isset($argv[1])?$argv[1]:'lt';
     $code = isset($argv[2])?$argv[2]:'10101010005';
     /**
