@@ -7,7 +7,7 @@
     $phone = isset($argv[2])?$argv[2]:'+37060000666';
     $code = isset($argv[3])?$argv[3]:'50001018865';
     /**
-    * Mobile ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
+    * Mobile ID test data can be found at https://dokobit.com/developers/testing
     */
 
     if (empty($accessToken)) {
