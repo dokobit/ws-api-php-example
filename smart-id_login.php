@@ -5,9 +5,6 @@
     $accessToken = ''; //Enter valid developer access token here.
     $country = isset($argv[1])?$argv[1]:'lt';
     $code = isset($argv[2])?$argv[2]:'10101010005';
-    /**
-    * Smart-ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
-    */
 
     if (empty($accessToken)) {
         echo "Access Token is required. Enter at line 5.\n";
