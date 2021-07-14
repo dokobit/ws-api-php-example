@@ -4,7 +4,7 @@
     $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
     $country = isset($argv[1])?$argv[1]:'lt';
-    $code = isset($argv[2])?$argv[2]:'10101010005';
+    $code = isset($argv[2])?$argv[2]:'30303039914';
 
     if (empty($accessToken)) {
         echo "Access Token is required. Enter at line 5.\n";

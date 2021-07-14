@@ -4,7 +4,7 @@
     $url = 'https://developers.dokobit.com';
     $accessToken = ''; //Enter valid developer access token here.
     $country = isset($argv[1])?$argv[1]:'lt';
-    $code = isset($argv[2])?$argv[2]:'10101010005';
+    $code = isset($argv[2])?$argv[2]:'30303039914';
     /**
     * Smart-ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
     */
