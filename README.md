@@ -8,7 +8,7 @@ Request access token [here](https://www.dokobit.com/developers/request-token).
 
 Enter API access token to example in 5th line.
 
-Check Mobile ID and Smart-ID test data [here](https://dokobit.com/developers/testing).
+Check Mobile ID and Smart-ID test data [here](https://dokobitbysignicat.zendesk.com/hc/en-us/articles/20067528968476-Mobile-ID-and-Smart-ID-test-data).
 
 ### Mobile-ID signing example
 
