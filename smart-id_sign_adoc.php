@@ -6,7 +6,7 @@
     $country = isset($argv[1])?$argv[1]:'lt';
     $code = isset($argv[2])?$argv[2]:'30303039914';
     /**
-    * Smart-ID test data can be found at https://support.dokobit.com/article/667-mobile-id-and-smart-id-test-data
+    * Smart-ID test data can be found at https://dokobitbysignicat.zendesk.com/hc/en-us/articles/20067528968476-Mobile-ID-and-Smart-ID-test-data
     */
     $file = isset($argv[3])?$argv[3]:'./test.pdf';
 
